@@ -3,6 +3,7 @@ import java.util.Random;
 public class Main {
     public static void main(String[] args) {
         int[][] matrix = fillRandomMatrix(5, 5);
+        printMatrix(matrix);
     }
     public static int[][] fillRandomMatrix(int rows, int cols) {
         Random random = new Random();
@@ -13,5 +14,15 @@ public class Main {
             }
         }
         return matrix;
+    }
+
+    public static void printMatrix(int[][] matrix) {
+        System.out.println("Матрица:");
+        for (int[] row : matrix) {
+            for (int element : row) {
+                System.out.print(element + " ");
+            }
+            System.out.println();
+        }
     }
 }
