@@ -2,7 +2,7 @@ import java.util.Random;
 
 class Main{
     public static void main(String[] args) {
-        int size = 3;
+        int size = 10;
         int[][] firstMatrix = new int[size][size];
         int[][] secondMatrix = new int[size][size];
         fillMatrix(firstMatrix);
@@ -50,7 +50,7 @@ class Main{
         Random random = new Random();
         for (int i = 0; i < matrix.length; i++) {
             for (int j = 0; j < matrix[i].length; j++) {
-                matrix[i][j] = random.nextInt(1, 10);
+                matrix[i][j] = random.nextInt(100, 1000);
             }
         }
     }
